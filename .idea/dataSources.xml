@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="TranslateConnectionToDB" uuid="dee41246-bf27-450f-9cb5-3ae63d6bc71a">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://fchbcmus:EI-2YXwk7r6PRNlZpXhE9lRnT8lbec_a@babar.db.elephantsql.com:5432/fchbcmus</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="PostgreSQL" uuid="a07f15f2-e5f0-46b7-bbe9-96afc8b28132">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://fchbcmus:EI-2YXwk7r6PRNlZpXhE9lRnT8lbec_a@babar.db.elephantsql.com/fchbcmus</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

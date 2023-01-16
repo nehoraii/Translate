@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="org.example.entity.EditorLanguagesEntity">
+        <table name="EditorLanguages" schema="public" catalog="Translate"/>
+        <attributes>
+            <id name="id">
+                <column name="ID" precision="-1"/>
+            </id>
+            <basic name="idLanguage">
+                <column name="IDLanguage" precision="-1"/>
+            </basic>
+            <basic name="level">
+                <column name="Level" precision="-1"/>
+            </basic>
+            <basic name="idEditor">
+                <column name="IDEditor" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

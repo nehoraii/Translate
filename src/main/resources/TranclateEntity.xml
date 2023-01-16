@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="org.example.entity.TranclateEntity">
+        <table name="Tranclate" schema="public" catalog="Translate"/>
+        <attributes>
+            <id name="id">
+                <column name="ID" precision="-1"/>
+            </id>
+            <basic name="massageId">
+                <column name="MassageID" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="languageId">
+                <column name="LanguageID" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="editorId">
+                <column name="EditorID" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="tranclate">
+                <column name="Tranclate" nullable="false"/>
+            </basic>
+            <basic name="data">
+                <column name="Data" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
