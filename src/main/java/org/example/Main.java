@@ -47,7 +47,7 @@ public class Main {
         LocalDate date= LocalDate.now();
         TranslateLogic translate=new TranslateLogic();
         translate.setTranslate(2,31,46,"שלום עולם", Date.valueOf(date));//כאןןןןןןןןןןןןןןןןןן
-        translate.setTranslate("Hello World","Englis3","a","055665","שלום עולם", Date.valueOf(date));//כאןןןןןןןןןןןןןןןןןן
+
 
     }
 }
