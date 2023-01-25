@@ -1,6 +1,7 @@
 package org.example.entity;
 
 import jakarta.persistence.*;
+import org.example.logic.EditorLanguageLogic;
 
 import java.util.Objects;
 
@@ -9,7 +10,7 @@ import java.util.Objects;
 public class EditorLanguagesEntity {
     private int id;
     private int idLanguage;
-    private int level;
+    private EditorLanguageLogic.LevelOfLanguage level;
     private int idEditor;
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,11 +36,11 @@ public class EditorLanguagesEntity {
 
     @Basic
     @Column(name = "Level", nullable = false)
-    public int getLevel() {
+    public EditorLanguageLogic.LevelOfLanguage getLevel() {
         return level;
     }
 
-    public void setLevel(int level) {
+    public void setLevel(EditorLanguageLogic.LevelOfLanguage level) {
         this.level = level;
     }
 
