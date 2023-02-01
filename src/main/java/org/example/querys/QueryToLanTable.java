@@ -3,9 +3,9 @@ package org.example.querys;
 import java.sql.*;
 
 public class QueryToLanTable {
-    String url="jdbc:postgresql://localhost:5432/Translate";;
-     String user="postgres";
-     String password="nehoraii0556652485";
+    private   String url="jdbc:postgresql://localhost:5432/Translate";
+    private  String user="postgres";
+    private  String password="nehoraii0556652485";
     private Connection getConnection(){
         try {
             Connection connection= DriverManager.getConnection(url,user,password);
@@ -17,7 +17,7 @@ public class QueryToLanTable {
         }
 
     }
-    private String arrayConsolidation(String [] str){
+    protected  String arrayConsolidation(String [] str){
         if(str==null){
             return "null";
         }
@@ -229,5 +229,4 @@ public class QueryToLanTable {
         }
     }
 
-
-    }
+}

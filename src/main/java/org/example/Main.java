@@ -1,5 +1,6 @@
 package org.example;
 
+import jakarta.persistence.Query;
 import org.example.logic.*;
 import org.example.querys.QueryToEditorTable;
 import org.example.querys.QueryToLanTable;
@@ -18,15 +19,17 @@ import java.util.TimeZone;
  */
 public class Main {
     public static void main(String[] args) throws SQLException {
-/*
+
         LanguageLogic logic=new LanguageLogic();
         logic.setLanguage("Englis3");
         logic.setLanguage("Englis3");
         logic.setLanguage("Englis3");
 
         EditorLogic editorLogic=new EditorLogic();
-        editorLogic.setEditor("a","0556654","nehor");
-
+        //editorLogic.setEditor("a","0556654","nehor");
+        QueryToEditorTable e=new QueryToEditorTable();
+        String[] cars={"*"};
+        e.veiwDB(cars);
 
         QueryToLanTable queryLan=new QueryToLanTable();
         ResultSet resultSet=queryLan.select("Englis5");
@@ -43,10 +46,9 @@ public class Main {
 
 
 
- */
         LocalDate date= LocalDate.now();
         TranslateLogic translate=new TranslateLogic();
-        translate.setTranslate(2,31,46,"שלום עולם", Date.valueOf(date));//כאןןןןןןןןןןןןןןןןןן
+        translate.setTranslate("Hello World","Englis5","a","055665", "qwertyuiop",Date.valueOf(date));//כאןןןןןןןןןןןןןןןןןן
 
 
     }

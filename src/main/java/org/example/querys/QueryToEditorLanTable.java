@@ -21,7 +21,7 @@ public class QueryToEditorLanTable {
     }
     private String arrayConsolidation(String [] str){
         if(str==null){
-            return "null";
+            return "*";
         }
         String oneArr;
         oneArr = str[0];

@@ -7,10 +7,11 @@ public class QueryToEditorTable {
     String user="postgres";
     String password="nehoraii0556652485";
     private String arrayConsolidation(String [] str){
+        String oneArr="";
         if(str==null){
-            return "null";
+            oneArr+="*";
+            return oneArr;
         }
-        String oneArr;
         oneArr = str[0];
         for (int i = 1; i < str.length; i++) {
             oneArr+= ", "+ str[i];
